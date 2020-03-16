@@ -1,0 +1,2 @@
+rootProject.name='uiTestHard01'
+include ':app'
