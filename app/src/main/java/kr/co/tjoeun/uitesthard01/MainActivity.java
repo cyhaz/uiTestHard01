@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     Button loginBtn = null;
     TextView findPwTxt = null;
     TextView signUpTxt = null;
+    EditText inputIdEdt = null;
+    EditText inputPwEdt = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         loginBtn = findViewById(R.id.loginBtn);
         findPwTxt = findViewById(R.id.findPwTxt);
         signUpTxt = findViewById(R.id.signUpTxt);
+        inputIdEdt = findViewById(R.id.inputIdEdt);
+        inputPwEdt = findViewById(R.id.inputPwEdt);
 
 //        로그인버튼의 글자를 => 회원가입으로 바꾸자
         loginBtn.setText("회원가입");
@@ -64,11 +69,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         
-//        로그인 버튼을 누르면 => 로그인합니다. 토스트 출력
+//        로그인 버튼을 누르면
+//        "ID : 입력값, PW : 입력값 으로 로그인합니다." 토스트 출력
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "로그인합니다.", Toast.LENGTH_SHORT).show();
+
+                // 입력한 ID값을 string으로 저장
+                String inputId = inputIdEdt.getText().toString();
+                // 입력한 Pw값을 string으로 저장
+                String inputPw = inputPwEdt.getText().toString();
+
+                // Toast로 가공해서 출력
+                String message = String.format("ID : %s, PW : %s 로 로그인합니다.", inputId, inputPw);
+                Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+
             }
         });
 
