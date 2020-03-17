@@ -7,10 +7,10 @@
     android:orientation="vertical"
     android:paddingLeft="25dp"
     android:paddingRight="25dp"
+    android:layout_marginTop="50dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="로그인"
@@ -35,7 +35,7 @@
     <Button
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:text="로그인"
         android:textColor="#FF0000"
         android:textStyle="bold"
@@ -49,21 +49,29 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/search_password"
-            android:textSize="16dp"/>
+            android:textSize="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
 
+        // 좌 우 벌려줄때는 weight 1짜리 텍스트뷰 하나 추가해주기
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="회원가입"
             android:textColor="#FF0000"
             android:textStyle="bold"
             android:gravity="right"
-            android:textSize="16dp"/>
+            android:textSize="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
 
 
     </LinearLayout>
