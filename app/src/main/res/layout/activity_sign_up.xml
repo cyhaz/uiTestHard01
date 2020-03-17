@@ -8,231 +8,247 @@
     android:background="#FFFFFF"
     tools:context=".SignUpActivity">
 
-<!-- 이메일 -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:paddingTop="25dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="7dp"
-                android:layout_height="7dp"
-                android:src="@drawable/button_black"
-                android:scaleType="centerCrop"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:text="이메일"
-                android:textColor="#000000"
-                android:textSize="17sp"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="사용 가능한 이메일입니다."
-                android:textColor="#2767E3"/>
-
-        </LinearLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-
-            <EditText
-                android:paddingLeft="10dp"
+            <!-- 이메일 -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="이메일"
-                android:background="@drawable/duplokbutton_layout"/>
-
-            <Button
-                android:layout_marginRight="10dp"
-                android:layout_width="70dp"
-                android:layout_height="35dp"
-                android:layout_gravity="right|center_vertical"
-                android:text="중복확인"
-                android:textColor="#808080"
-                android:background="@drawable/duplokbutton_layout"/>
-
-        </FrameLayout>
-
-
-    </LinearLayout>
-
-    <!-- 회색 줄 넣기 -->
-    <LinearLayout
-        android:layout_marginTop="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="#F4F5F5">
-
-    </LinearLayout>
-
-<!-- 비밀번호 & 비밀번호 확인 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:paddingTop="47dp"
-        android:paddingBottom="54dp"
-        android:orientation="vertical">
-
-        // 비밀번호 문자
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:layout_width="7dp"
-                android:layout_height="7dp"
-                android:src="@drawable/button_black"
-                android:scaleType="centerCrop"/>
-
-            <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:text="비밀번호"
-                android:textColor="#000000"
-                android:textSize="17sp"/>
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="25dp">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:src="@drawable/button_black"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="이메일"
+                        android:textColor="#000000"
+                        android:textSize="17sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="사용 가능한 이메일입니다."
+                        android:textColor="#2767E3"/>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="이메일"
+                        android:background="@drawable/duplokbutton_layout"/>
+
+                    <Button
+                        android:layout_marginRight="10dp"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:text="중복확인"
+                        android:textColor="#808080"
+                        android:background="@drawable/duplokbutton_layout"/>
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <!-- 회색 줄 넣기 -->
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F4F5F5">
+
+            </LinearLayout>
+
+            <!-- 비밀번호 & 비밀번호 확인 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="47dp"
+                android:paddingBottom="54dp"
+                android:orientation="vertical">
+
+                // 비밀번호 문자
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:src="@drawable/button_black"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="비밀번호"
+                        android:textColor="#000000"
+                        android:textSize="17sp"/>
+
+
+                </LinearLayout>
+
+                // 비밀번호 입력칸
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="특수문자를 포함한 8자리"
+                    android:background="@drawable/duplokbutton_layout"/>
+
+                // 비밀번호 확인 문자
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="33dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:src="@drawable/button_black"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="비밀번호 확인"
+                        android:textColor="#000000"
+                        android:textSize="17sp"/>
+
+                </LinearLayout>
+
+                // 비밀번호 확인 입력칸
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="특수문자를 포함한 8자리"
+                    android:background="@drawable/duplokbutton_layout"/>
+
+            </LinearLayout>
+
+            <!-- 회색 줄 넣기-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F4F5F5">
+
+            </LinearLayout>
+
+            <!-- 근무가능 시간 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="47dp"
+                android:paddingBottom="54dp"
+                android:orientation="vertical">
+
+                // 근무가능시간 문자
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:src="@drawable/button_black"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="근무가능 시간"
+                        android:textColor="#000000"
+                        android:textSize="17sp"/>
+
+
+                </LinearLayout>
+
+                // 풀타임 / 파트타임(재직중) 선택
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="풀타임"/>
+
+                    <RadioButton
+                        android:layout_marginLeft="47dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="파트타임 (재직중)"/>
+
+
+                </RadioGroup>
+
+                // 다음 버튼
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="다음"
+                    android:textSize="16dp"
+                    android:textColor="#FFFFFF"/>
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
-        // 비밀번호 입력칸
-        <EditText
-            android:layout_marginTop="10dp"
-            android:paddingLeft="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="특수문자를 포함한 8자리"
-            android:background="@drawable/duplokbutton_layout"/>
-
-        // 비밀번호 확인 문자
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="33dp"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:layout_width="7dp"
-                android:layout_height="7dp"
-                android:src="@drawable/button_black"
-                android:scaleType="centerCrop"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:text="비밀번호 확인"
-                android:textColor="#000000"
-                android:textSize="17sp"/>
-
-        </LinearLayout>
-
-        // 비밀번호 확인 입력칸
-        <EditText
-            android:layout_marginTop="10dp"
-            android:paddingLeft="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="특수문자를 포함한 8자리"
-            android:background="@drawable/duplokbutton_layout"/>
-
-    </LinearLayout>
-
-    <!-- 회색 줄 넣기-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="#F4F5F5">
-
-    </LinearLayout>
-
-<!-- 근무가능 시간 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:paddingTop="47dp"
-        android:paddingBottom="54dp"
-        android:orientation="vertical">
-
-        // 근무가능시간 문자
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:layout_width="7dp"
-                android:layout_height="7dp"
-                android:src="@drawable/button_black"
-                android:scaleType="centerCrop"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:text="근무가능 시간"
-                android:textColor="#000000"
-                android:textSize="17sp"/>
-
-
-        </LinearLayout>
-
-        // 풀타임 / 파트타임(재직중) 선택
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="풀타임"/>
-
-            <RadioButton
-                android:layout_marginLeft="47dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="파트타임 (재직중)"/>
-
-
-        </RadioGroup>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="다음"/>
-
-
-    </LinearLayout>
-
+    </ScrollView>
 
 </LinearLayout>
