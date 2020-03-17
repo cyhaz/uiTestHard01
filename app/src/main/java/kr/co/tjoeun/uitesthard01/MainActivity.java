@@ -63,6 +63,14 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "회원가입 화면으로 이동합니다.", Toast.LENGTH_SHORT).show();
             }
         });
+        
+//        로그인 버튼을 누르면 => 로그인합니다. 토스트 출력
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "로그인합니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
     }
