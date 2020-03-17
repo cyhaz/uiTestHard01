@@ -76,7 +76,7 @@
 
     </LinearLayout>
 
-<!-- 회색 줄 넣기 -->
+    <!-- 회색 줄 넣기 -->
     <LinearLayout
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
@@ -84,5 +84,92 @@
         android:background="#F4F5F5">
 
     </LinearLayout>
+
+<!-- 비밀번호 & 비밀번호 확인 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="47dp"
+        android:paddingBottom="54dp"
+        android:orientation="vertical">
+
+        // 비밀번호 문자
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:src="@drawable/button_black"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="비밀번호"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+
+
+        </LinearLayout>
+
+        // 비밀번호 입력칸
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="특수문자를 포함한 8자리"
+            android:background="@drawable/duplokbutton_layout"/>
+
+        // 비밀번호 확인 문자
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="33dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:src="@drawable/button_black"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="비밀번호 확인"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        // 비밀번호 확인 입력칸
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="특수문자를 포함한 8자리"
+            android:background="@drawable/duplokbutton_layout"/>
+
+    </LinearLayout>
+
+    <!-- 회색 줄 넣기-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F4F5F5">
+
+    </LinearLayout>
+
 
 </LinearLayout>
